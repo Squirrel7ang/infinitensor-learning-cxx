@@ -28,9 +28,9 @@ public:
 
     // TODO: 实现移动赋值
     // NOTICE: ⚠ 注意移动到自身问题 ⚠
-    DynFibonacci &operator=(DynFibonacci && f) noexcept {
+    DynFibonacci &operator=(DynFibonacci && f): cache(f.cache), cached(f.cached) noexcept {
         if (this == &f) {
-            return *this;
+            return this;
         }
         delete[] cache;
         cache = f.cache;
@@ -38,7 +38,7 @@ public:
 
         delete[] f.cache;
         f.cached = 0;
-        return *this;
+        return this;
     };
 
     // TODO: 实现析构器，释放缓存空间

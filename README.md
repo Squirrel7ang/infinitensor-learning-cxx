@@ -1,5 +1,12 @@
 ﻿# Learning C++
 
+> **NOTICE** fork from [infinitensor/learning-cxx](https://github.com/infinitensor/learning-cxx.git)
+
+> modified by Squirrel7ang
+
+RoadMap
+- [x] exercises 0-33
+
 > **NOTICE** 推荐阅读 [C++ 参考手册](https://zh.cppreference.com/w/cpp) 学习 C/C++ 语法和 STL 库。
 
 ## 使用指南
